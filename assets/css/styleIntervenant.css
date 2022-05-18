@@ -34,6 +34,7 @@
         padding-top: 15px !important;
     }
     .swiper-pagination {
+        margin: 0 0-2px 0;
         left: 65px !important;
         max-width: 60%;
     }
@@ -62,7 +63,7 @@
 .swiper {
     width: 100%;
     height: 100%;
-    padding: 50px 10px;
+    padding: 65px 35px;
 }
 
 .card {
