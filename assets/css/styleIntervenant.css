@@ -1,280 +1,283 @@
 /* === Google Font Import - Poppins === */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
-.intervenant{
-  height: 100%;
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  border-top: solid 2px #0432;
-  padding: 10px 0px;
-  margin-bottom: 10px
+.intervenant {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: solid 2px #0432;
+    padding: 10px 0px;
+    margin-bottom: 10px
 }
-@media (max-height: 800px){
-  .sectionIntervenant{
-    height: 500px !important;
-  }
+
+@media (max-height: 800px) {
+    .sectionIntervenant {
+        height: 500px !important;
+    }
 }
+
 @media (max-width: 600px) {
-  
-  .swiper {
-    width: 90% !important;;
-    
-}
-section .card .image{
-  height: 150px !important;
-  width: 150px !important;
-}
-.swiper-slide-active .title-type{
-  font-size: 1.2em !important;
-}
-.card .name-profession{
-  padding-top:15px !important;
-}
-.swiper-pagination{
-  
-  left:65px !important;
-  max-width: 60% ;
-}
-
-}
-.title{
-  font-size:  2.5em;
-  font-weight: 700;
-  color: #12395d;
-  letter-spacing: .1em;
+    .swiper {
+        width: 90% !important;
+        ;
+    }
+    section .card .image {
+        height: 150px !important;
+        width: 150px !important;
+    }
+    .swiper-slide-active .title-type {
+        font-size: 1.2em !important;
+    }
+    .card .name-profession {
+        padding-top: 15px !important;
+    }
+    .swiper-pagination {
+        margin: 0 0 -15px 0;
+        left: 65px !important;
+        max-width: 60%;
+    }
 }
 
-.sectionIntervenant{
-  position: relative;  
-  height: 500px;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px 20px;
-  box-shadow:rgb(17, 16, 16) 0px 0px 6px 1px;
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #12395d;
+    letter-spacing: .1em;
+}
+
+.sectionIntervenant {
+    position: relative;
+    height: 500px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px;
+    box-shadow: rgb(17, 16, 16) 0px 0px 6px 1px;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
-  padding: 50px 10px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px;
 }
 
-.card{
-  position: relative;
-  background: #fff;
-  border-radius: 20px;
-  margin: 20px 0 20px 0;
-  box-shadow: rgb(255 255 255) 0px 0px 6px 1px; 
-  width:414px;
-  
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+    box-shadow: rgb(255 255 255) 0px 0px 6px 1px;
+    width: 414px;
 }
 
-.card::before{
-  content: "";
-  position: absolute;
-  height: 200px;
-  width: 100%;
-  background: #1d5c9d;
-  border-radius: 20px 20px 0 0;
+.card::before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: #1d5c9d;
+    border-radius: 20px 20px 0 0;
 }
 
-.card .card-content{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  position: relative;
-  z-index: 100;
-  height: 100%;
-  
-}
-section .card .image{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background: #000000;
-  margin-top: 20px;
-}
-section .card .image img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  
-}
-.card .name-profession{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  
-} 
-.name-profession .name{
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    z-index: 100;
+    height: 100%;
 }
 
-.name-profession .profession{
-  font-size:15px;
-  font-weight: 500;
-  text-align: center;
+section .card .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #000000;
+    margin-top: 20px;
 }
 
-.card .button{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
-.content{
-  height: 100%;
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.swiper-pagination{
-  
-  position: absolute ;
-  bottom: 0px !important;
-  
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
 }
 
-.swiper-pagination-bullet{
-  height: 7px;
-  width: 26px;
-  border-radius: 25px;
-  background: #1d5c96;
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
 }
 
-.swiper-button-next, .swiper-button-prev{
-  opacity: 0.7;
-  color: #12395d;
-  transition: all 0.3s ease;
-}
-.swiper-button-next:hover, .swiper-button-prev:hover{
-  opacity: 1;
-  color: #12395d;
-}
-.swiper-slide{
-  filter: blur(4px);
-}
-.swiper-slide-active{
-  filter: none;
-  box-shadow: 0px 0px 7px 1px rgb(0 0 0);
-
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-
-.swiper-slide-active .title-type{
-  position: absolute;
-  top:-50px;
-  left:20px;
-  font-size: 1.5em;
-  display: inline-block;
-  color: #123977;
-  font-weight: 550;
- visibility: visible;
-  display: inline-block;
-
-}
-.title-type{
-visibility: hidden;
-margin: 0;
+.content {
+    height: 100%;
 }
 
-.swiper-slide-active .buttonDownload{
-  display: inline-block;
+.swiper-pagination {
+    position: absolute;
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+    /* height: 7px; */
+    /* width: 26px; */
+    border-radius: 25px;
+    background: #1d5c96;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: #12395d;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: #12395d;
+}
+
+.swiper-slide {
+    filter: blur(4px);
+}
+
+.swiper-slide-active {
+    filter: none;
+    box-shadow: 0px 0px 7px 1px rgb(0 0 0);
+}
+
+.swiper-slide-active .title-type {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    font-size: 1.5em;
+    display: inline-block;
+    color: #123977;
+    font-weight: 550;
+    visibility: visible;
+    display: inline-block;
+}
+
+.title-type {
+    visibility: hidden;
+    margin: 0;
+}
+
+.swiper-slide-active .buttonDownload {
+    display: inline-block;
 }
 
 .buttonDownload {
-	display: none;
-	position: absolute;
-	padding: 10px 25px;
- border:solid 1px #12395d;
-	background-color:  #1d5c9d;
-	color: white;
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 0.9em;
-	text-align: center;
-	text-indent: 15px;
-  border-radius: 20px;
-  bottom: 10px;
+    display: none;
+    position: absolute;
+    padding: 10px 25px;
+    border: solid 1px #12395d;
+    background-color: #1d5c9d;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border-radius: 20px;
+    bottom: 10px;
 }
 
 .buttonDownload:hover {
-	background-color: rgb(255, 255, 255);
-	color: #12395d;
+    background-color: rgb(255, 255, 255);
+    color: #12395d;
 }
 
-.buttonDownload:before, .buttonDownload:after {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 15px;
-	top: 52%;
-  color: #fff;
+.buttonDownload:before,
+.buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+    color: #fff;
 }
+
 
 /* Download box shape  */
+
 .buttonDownload:before {
-	width: 14px;
-	height: 2px;
-	border-style: solid;
-	border-width: 0 2px 2px;
+    width: 14px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
 }
 
+
 /* Download arrow shape */
+
 .buttonDownload:after {
-	width: 0;
-	height: 0;
-	margin-left: 3px;
-	margin-top: -7px;
-  
-	border-style: solid;
-	border-width: 4px 4px 0 4px;
-	border-color: transparent;
-	border-top-color: inherit;
-	
-	animation: downloadArrow 2s linear infinite;
-	animation-play-state: running;
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: running;
 }
 
 .buttonDownload:hover:before {
-	border-color: #12395d;;
+    border-color: #12395d;
+    ;
 }
 
 .buttonDownload:hover:after {
-	border-top-color: #12395d;
-
+    border-top-color: #12395d;
 }
 
+
 /* keyframes for the download icon anim */
+
 @keyframes downloadArrow {
-	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
-	0% {
-		margin-top: -7px;
-		opacity: 1;
-	}
-	
-	0.001% {
-		margin-top: -15px;
-		opacity: 0;
-	}
-	
-	50% {
-		opacity: 1;
-	}
-	
-	100% {
-		margin-top: 0;
-		opacity: 0;
-	}
+    /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+    0.001% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 0;
+    }
 }
