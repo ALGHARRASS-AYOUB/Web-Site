@@ -34,7 +34,6 @@
         padding-top: 15px !important;
     }
     .swiper-pagination {
-        margin: 0 0 -15px 0;
         left: 65px !important;
         max-width: 60%;
     }
@@ -141,6 +140,7 @@ section .card .image img {
 
 .swiper-pagination {
     position: absolute;
+    margin: 0 0 -15px 0;
     bottom: 0px !important;
 }
 
