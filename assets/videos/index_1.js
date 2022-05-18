@@ -1,4 +1,3 @@
-
 let Videos_1 = document.querySelectorAll(".clip_1");
 let Videos_2 = document.querySelectorAll(".clip_2");
 let Videos_3 = document.querySelectorAll(".clip_3");
@@ -7,7 +6,7 @@ let Videos_5 = document.querySelectorAll(".clip_5");
 
 let Play = document.querySelectorAll("iframe");
 
-let arrows= document.querySelectorAll(".arr_1");
+let arrows = document.querySelectorAll(".arr_1");
 
 let dashs_1 = document.querySelectorAll(".dash_1");
 let dashs_2 = document.querySelectorAll(".dash_2");
@@ -59,71 +58,66 @@ let dashs = dashs_1;
 var choice = document.querySelector("#choice");
 var option = choice.options[choice.selectedIndex];
 
-title.innerHTML = option.innerHTML;
-// console.log(option.value);
+title.innerHTML = option.innerText;
 
 function updateBySel() {
     var choice = document.querySelector("#choice");
     var option = choice.options[choice.selectedIndex];
 
-    title.innerHTML = option.innerHTML;
-    // console.log(option.value);
-    
-    if(choice.selectedIndex === 0){
+    title.innerHTML = option.innerText;
+    console.log(option)
+
+    if (choice.selectedIndex === 0) {
         dothis();
-        Videos_1.forEach((el,index)=>{
+        Videos_1.forEach((el, index) => {
             el.classList.remove("hideMe");
-            el.firstElementChild.firstElementChild.setAttribute("src",src_1[index]);
+            el.firstElementChild.firstElementChild.setAttribute("src", src_1[index]);
         })
-        dashs_1.forEach((el)=>{
+        dashs_1.forEach((el) => {
             el.classList.remove("hideMe");
         })
         dashs = dashs_1;
         Videos = Videos_1;
-    }
-    else if(choice.selectedIndex === 1){
+    } else if (choice.selectedIndex === 1) {
         dothis();
-        Videos_2.forEach((el,index)=>{
+        Videos_2.forEach((el, index) => {
             el.classList.remove("hideMe");
-            el.firstElementChild.firstElementChild.setAttribute("src",src_2[index]);
+            el.firstElementChild.firstElementChild.setAttribute("src", src_2[index]);
         })
-        dashs_2.forEach((el)=>{
+        dashs_2.forEach((el) => {
             el.classList.remove("hideMe");
         })
         dashs = dashs_2;
         Videos = Videos_2;
-    }
-    else if(choice.selectedIndex === 2){
+    } else if (choice.selectedIndex === 2) {
         dothis();
-        Videos_3.forEach((el,index)=>{
+        Videos_3.forEach((el, index) => {
             el.classList.remove("hideMe");
-            el.firstElementChild.firstElementChild.setAttribute("src",src_3[index]);
+            el.firstElementChild.firstElementChild.setAttribute("src", src_3[index]);
         })
-        dashs_3.forEach((el)=>{
+        dashs_3.forEach((el) => {
             el.classList.remove("hideMe");
         })
         dashs = dashs_3;
         Videos = Videos_3;
-    }
-    else if(choice.selectedIndex === 3){
+    } else if (choice.selectedIndex === 3) {
         dothis();
-        Videos_4.forEach((el,index)=>{
+        Videos_4.forEach((el, index) => {
             el.classList.remove("hideMe");
-            el.firstElementChild.firstElementChild.setAttribute("src",src_4[index]);
+            el.firstElementChild.firstElementChild.setAttribute("src", src_4[index]);
         })
-        dashs_4.forEach((el)=>{
+        dashs_4.forEach((el) => {
             el.classList.remove("hideMe");
         })
         dashs = dashs_4;
         Videos = Videos_4;
-    }
-    else{
+    } else {
         dothis();
-        Videos_5.forEach((el,index)=>{
+        Videos_5.forEach((el, index) => {
             el.classList.remove("hideMe");
-            el.firstElementChild.firstElementChild.setAttribute("src",src_5[index]);
+            el.firstElementChild.firstElementChild.setAttribute("src", src_5[index]);
         })
-        dashs_5.forEach((el)=>{
+        dashs_5.forEach((el) => {
             el.classList.remove("hideMe");
         })
         dashs = dashs_5;
@@ -131,14 +125,14 @@ function updateBySel() {
     }
     Update(0);
     // ==============================================
-    Videos.forEach((el,index) => {
-        el.addEventListener("click",(event)=>{
+    Videos.forEach((el, index) => {
+        el.addEventListener("click", (event) => {
             Update(index);
             currentpos = index;
         })
     });
-    dashs.forEach((el,index)=>{
-        el.addEventListener("click",(event)=>{
+    dashs.forEach((el, index) => {
+        el.addEventListener("click", (event) => {
             Update(index);
             currentpos = index;
         })
@@ -146,50 +140,50 @@ function updateBySel() {
 }
 
 
-function dothis(){
-    Videos_1.forEach((el)=>{
+function dothis() {
+    Videos_1.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("level");
         el.classList.remove("active");
     })
-    Videos_2.forEach((el)=>{
+    Videos_2.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("level");
         el.classList.remove("active");
-        
+
     })
-    Videos_3.forEach((el)=>{
-        el.classList.add("hideMe");
-        el.classList.remove("level");
-        el.classList.remove("active");
-    })
-    Videos_4.forEach((el)=>{
+    Videos_3.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("level");
         el.classList.remove("active");
     })
-    Videos_5.forEach((el)=>{
+    Videos_4.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("level");
         el.classList.remove("active");
     })
-    dashs_1.forEach((el)=>{
+    Videos_5.forEach((el) => {
+        el.classList.add("hideMe");
+        el.classList.remove("level");
+        el.classList.remove("active");
+    })
+    dashs_1.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("active");
     })
-    dashs_2.forEach((el)=>{
+    dashs_2.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("active");
     })
-    dashs_3.forEach((el)=>{
+    dashs_3.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("active");
     })
-    dashs_4.forEach((el)=>{
+    dashs_4.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("active");
     })
-    dashs_5.forEach((el)=>{
+    dashs_5.forEach((el) => {
         el.classList.add("hideMe");
         el.classList.remove("active");
     })
@@ -197,7 +191,7 @@ function dothis(){
 
 // updateBySel();
 
-btn.onclick = ()=>{
+btn.onclick = () => {
     updateBySel();
     nbr_Videos = Videos.length;
     currentpos = 0;
@@ -211,46 +205,46 @@ btn.onclick = ()=>{
 var nbr_Videos = Videos.length;
 var currentpos = 0;
 
-Videos.forEach((el,index) => {
-    el.addEventListener("click",(event)=>{
+Videos.forEach((el, index) => {
+    el.addEventListener("click", (event) => {
         Update(index);
         currentpos = index;
     })
 });
-dashs.forEach((el,index)=>{
-    el.addEventListener("click",(event)=>{
+dashs.forEach((el, index) => {
+    el.addEventListener("click", (event) => {
         Update(index);
         currentpos = index;
     })
 })
 
 
-arrows[1].addEventListener("click",(event)=>{
+arrows[1].addEventListener("click", (event) => {
     currentpos++;
     //console.log("right clisk  " + currentpos);
-    if(currentpos === nbr_Videos-1){
+    if (currentpos === nbr_Videos - 1) {
         arrows[1].classList.remove("active");
     }
     arrows[0].classList.add("active");
     Update(currentpos);
 });
-arrows[0].addEventListener("click",(event)=>{
+arrows[0].addEventListener("click", (event) => {
     //console.log("left clisk  " + currentpos);
     currentpos--;
-    if(currentpos === 0){
+    if (currentpos === 0) {
         arrows[0].classList.remove("active");
     }
     arrows[1].classList.add("active");
     Update(currentpos);
 });
 
-function Update(arg){
-    Videos.forEach((el)=>{
+function Update(arg) {
+    Videos.forEach((el) => {
         el.classList.remove("active");
         el.classList.remove("level");
         el.style.margin = "0px 39px";
     });
-    dashs.forEach((el)=>{
+    dashs.forEach((el) => {
         el.classList.remove("active");
     })
 
@@ -258,36 +252,33 @@ function Update(arg){
     Videos[arg].classList.add("active");
     let dim = document.documentElement.clientWidth;
 
-    if(arg === 0){
-        Videos[arg+1].classList.add("level");
-        Videos[arg+2].classList.add("level");
-        if(dim > 769)
+    if (arg === 0) {
+        Videos[arg + 1].classList.add("level");
+        Videos[arg + 2].classList.add("level");
+        if (dim > 769)
             Videos[arg].style.marginLeft = "60%";
     }
-    if(arg === nbr_Videos-1)
-    {
-        Videos[arg-1].classList.add("level");
-        Videos[arg-2].classList.add("level");
-        if(dim > 769)
-            Videos[arg].style.marginRight  = "60%";
+    if (arg === nbr_Videos - 1) {
+        Videos[arg - 1].classList.add("level");
+        Videos[arg - 2].classList.add("level");
+        if (dim > 769)
+            Videos[arg].style.marginRight = "60%";
     }
-    if(arg>0 && arg<nbr_Videos-1){
-        Videos[arg-1].classList.add("level");
-        Videos[arg+1].classList.add("level");
+    if (arg > 0 && arg < nbr_Videos - 1) {
+        Videos[arg - 1].classList.add("level");
+        Videos[arg + 1].classList.add("level");
         Videos[arg].style.margin = "0px 56px";
     }
 
-    title.innerHTML = Videos[arg].getAttribute('value');
-    if(arg === 0){
+    // title.innerHTML = Videos[arg].getAttribute('value');
+    if (arg === 0) {
         arrows[0].classList.remove("active");
-    }
-    else{
+    } else {
         arrows[0].classList.add("active");
     }
-    if(arg === nbr_Videos-1){
+    if (arg === nbr_Videos - 1) {
         arrows[1].classList.remove("active");
-    }
-    else{
+    } else {
         arrows[1].classList.add("active");
     }
 }

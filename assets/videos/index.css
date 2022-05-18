@@ -235,16 +235,19 @@
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    height: 30px;
 }
 
 #choice {
     background-color: #fff;
     color: #1e1d40;
-    width: 30%;
+    width: 70%;
     border-radius: 4px;
     border: 1px solid black;
     height: 40px;
     margin-right: 20px;
+    position: absolute;
+    left: 10px;
 }
 
 #choice option {
@@ -256,9 +259,11 @@
     height: 40px;
     border: 1px solid black;
     border-radius: 4px;
-    background-color: #fff;
-    color: #1e1d40;
+    background-color: #1d5c9d;
+    color: #fff;
     padding: 0 12px;
+    position: absolute;
+    right: 10px;
 }
 
 .hideMe {
@@ -286,7 +291,7 @@
     }
     .video_Container_1 {
         width: 97vw;
-        height: 119vh;
+        height: 125vh;
     }
     .video_Container_1 .videos-list {
         display: flex;
