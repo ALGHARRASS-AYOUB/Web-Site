@@ -147,8 +147,6 @@ section .card .image img {
 }
 
 .swiper-pagination-bullet {
-    /* height: 7px; */
-    /* width: 26px; */
     border-radius: 25px;
     background: #1d5c96;
 }
