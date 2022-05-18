@@ -48,6 +48,7 @@
 
 .sectionIntervenant {
     position: relative;
+    padding-bottom: 30px;
     height: 500px;
     width: 98%;
     display: flex;
@@ -140,7 +141,7 @@ section .card .image img {
 
 .swiper-pagination {
     position: absolute;
-    margin: 0 0 -15px 0;
+    margin: 0 0 -1.5px 0;
     bottom: 0px !important;
 }
 
