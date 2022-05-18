@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
@@ -365,14 +364,9 @@ h6 {
     right: 0;
     transition: 0.3s;
     z-index: 999;
-
     bottom: 0;
     height: 100%;
     width: 50%;
-
-
-
-
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -383,7 +377,7 @@ h6 {
     color: #1d5c96;
 }
 
-.navbar-mobile ul{
+.navbar-mobile ul {
     display: block;
     position: absolute;
     right: 0px;
@@ -473,7 +467,6 @@ h6 {
     background-size: cover;
     overflow: hidden;
     position: relative;
-    
 }
 
 @media (min-width: 1024px) {
@@ -481,29 +474,32 @@ h6 {
         background-attachment: fixed;
     }
 }
+
 @media (max-width:800px) {
-    #hero{
+    #hero {
         min-height: 700px;
         width: 100%;
     }
 }
-@media (max-width:350px){
-    *{
+
+@media (max-width:350px) {
+    * {
         font-size: 10px;
     }
-    h1{
+    h1 {
         font-size: 15px;
     }
-    p{
+    p {
         font-size: 10px;
     }
-    h2{
+    h2 {
         font-size: 13px;
     }
-    span{
+    span {
         font-size: 15px;
     }
 }
+
 #hero:before {
     content: "";
     background: rgba(6, 12, 34, 0.8);
@@ -549,10 +545,10 @@ h6 {
 
 @media (max-width: 991px) {
     #hero h1 {
-        font-size: 26px;  margin-bottom: 15px;
+        font-size: 26px;
+        margin-bottom: 15px;
         text-align: center;
     }
-    
 }
 
 #hero p {
@@ -564,7 +560,6 @@ h6 {
 @media (max-width: 991px) {
     #hero p {
         font-size: 16px;
-      
     }
 }
 
@@ -655,19 +650,17 @@ h6 {
     animation-delay: 0.8s;
     border: 2px solid #0000FF;
 }
-@media (min-width: 600px){
-#imag{
-    height: 50px;
-    
-}
-h1{
-    text-align: center;
-   
-    text-align-last: center;
-    
+
+@media (min-width: 600px) {
+    #imag {
+        height: 50px;
+    }
+    h1 {
+        text-align: center;
+        text-align-last: center;
+    }
 }
 
-}
 #hero .about-btn:hover {
     background: #0000ff;
     color: #fff;
@@ -694,105 +687,127 @@ h1{
         opacity: 0;
     }
 }
-#lampe{
+
+#lampe {
     width: 5rem;
     height: 7rem;
 }
-#pic img{
-width: 13rem;
-height: 7rem;
+
+#pic img {
+    width: 13rem;
+    height: 7rem;
 }
+
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 
 #about {
-    background:#12395d;
+    background: #12395d;
     background-size: cover;
     overflow: hidden;
     position: relative;
     color: #fff;
     padding: 60px 0 40px 0;
-   
 }
 
-#about h5{
+#about h5 {
     font-size: 13px;
     color: white;
     margin: 0;
     padding: 5px;
     font-weight: 500;
 }
-#about h6{
+
+#about h6 {
     font-size: 11.5px;
     color: white;
     margin: 0;
     padding: 8px;
     margin-left: 15px;
-   
 }
-#about h4{
+
+#about h4 {
     font-size: 13px;
     color: white;
     margin: 0;
     font-weight: 400;
     padding: 5px 0;
 }
-#about h6::before{
-    content:'>> ';
+
+#about h6::before {
+    content: '>> ';
     color: yellow;
 }
-#about h5::before{
-    content:url(../img/ampoule.png);
+
+#about h5::before {
+    content: url(../img/ampoule.png);
 }
-#ctlogo{
+
+#ctlogo {
     animation-name: logo;
     animation-duration: 6s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
 }
+
 @keyframes logo {
-    20%{
+    20% {
         transform: rotate(0);
     }
-    50%{
+    50% {
         transform: rotate(360deg);
     }
-    75%{
+    75% {
         transform: scale(1.2);
     }
 }
+
 #conteneur {
-	position:relative;
-	height:20rem;
-	width:100%;
-	margin:0 auto;
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    margin: 0 auto;
 }
+
 #conteneur img {
     width: 100%;
-	position:absolute;
-	left:0;
+    position: absolute;
+    left: 0;
 }
+
 @keyframes fondu-in-out {
-	0%    { opacity:1; }
-	25%   { opacity:1; }
-	75%   { opacity:0; }
-	100%  { opacity:0; }
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 #conteneur img.image-de-dessus {
-	animation-name: fondu-in-out;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-	animation-duration: 4s;
-	animation-direction: alternate;
+    animation-name: fondu-in-out;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
 }
+
+
 /* ----------------------------------------------------------------- */
+
 @media (min-width: 1024px) {
     #about {
         background-attachment: fixed;
     }
 }
-
 
 #about h2 {
     font-size: 36px;
@@ -820,6 +835,7 @@ height: 7rem;
 # Speakers Section
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -837,7 +853,7 @@ height: 7rem;
 /* ------------- */
 
 #schedule {
-    padding: 10px 0 ;
+    padding: 10px 0;
     height: 100%;
 }
 
@@ -866,6 +882,7 @@ height: 7rem;
 @media (max-width: 991px) {
     #schedule .nav-tabs a {
         padding: 8px 60px;
+        margin-top: 8px;
     }
 }
 
@@ -1243,8 +1260,6 @@ h4 i {
     margin-bottom: 30px;
 }
 
-
-
 #footer .footer-top .footer-info p {
     font-size: 14px;
     line-height: 24px;
@@ -1314,10 +1329,13 @@ h4 i {
     line-height: 26px;
 }
 
+
 /* logos style */
-.logos{
+
+.logos {
     height: 20vh;
 }
+
 .brand {
     /* height: 18rem; */
     height: 20vh;
@@ -1330,9 +1348,8 @@ h4 i {
     /* min-height: 48px; */
 }
 
-#logo{
+#logo {
     height: 4rem;
     height: auto !important;
     padding-top: 1rem;
-    
 }
