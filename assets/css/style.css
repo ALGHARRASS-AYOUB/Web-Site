@@ -62,8 +62,62 @@ h6 {
     overflow: visible;
     background: #fff url("../img/preloader.svg") no-repeat center center;
 }
+#tr{
+    overflow: hidden;
+    animation:tran;
+    animation-delay: 5s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#tr1{
+   
+    padding: 10px;
+    animation:tran1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes tran1 {
+    0%{
+    opacity: 0.4;
+     transform: translateY(5rem);
+    }
+    25%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0;
+        transform: scale(12);
+    }
+    100%{opacity: 0;
+        transform: translateY(0rem);
 
+       }
+    }
+@keyframes tran {
+    0%{
+        transform: translateY(0rem);
+    }
+    25%{
+        transform: translateY(10rem);
+    }
+    50%{
+        transform:translate(10rem,10rem);
+    }
+    75%{
+        transform:translate(10rem,0rem);
+    }
+    100%{
+        transform: translatex(0rem);
+    }
+}
+#cnt{
+    display: flex;
+    justify-content: space-evenly;
 
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -896,6 +950,7 @@ h6 {
     #schedule .nav-tabs a {
         padding: 8px 30px;
     }
+
 }
 
 #schedule .nav-tabs a.active {
@@ -1103,12 +1158,17 @@ h4 i {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.5);
     height: 160px;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    -webkit-filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
 #supporters .supporter-logo:hover img {
     transform: scale(1.2);
 }
-
+#supporters .supporter-logo:hover{
+filter: none;
+-webkit-filter: none;
+}
 #supporters img {
     transition: all 0.4s ease-in-out;
 }
