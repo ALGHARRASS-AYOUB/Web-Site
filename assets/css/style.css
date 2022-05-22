@@ -152,7 +152,16 @@ h6 {
     opacity: 1;
 }
 
-
+#pic img {
+    width: 90%;
+   height:6.5rem;
+}
+.colo{
+    background-color: #12395d;
+    border:1px solid #0b2238;
+    /* border-top: none; border-left: none; */
+    box-shadow: #0b2238 10px 5px;
+}
 /* Sections Header
 --------------------------------*/
 
